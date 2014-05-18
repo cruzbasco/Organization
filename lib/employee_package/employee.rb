@@ -5,6 +5,7 @@ class Employee < Entity
 	attr_reader :attributes, :grade
 
 	def initialize()
+		super
 		@grade = Grade.new
 		@attributes = []
 	end
