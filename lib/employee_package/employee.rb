@@ -1,4 +1,5 @@
 require 'employee_package/grade'
+require 'entity'
 class Employee < Entity
 
 	attr_reader :attributes, :grade
