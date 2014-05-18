@@ -14,7 +14,7 @@ class Grade
 		@profession.push(profession)
 	end
 
-	def remove_profesion(profession)
+	def remove_profession(profession)
 		@profession.delete_if{|profession| profession.object_id == profession_id}
 	end
 
