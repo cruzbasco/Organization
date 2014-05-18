@@ -5,8 +5,7 @@ require 'attribute_types/text_type'
 require 'Information'
 	
 	describe "a employee" do
-	subject(:employee){Employee.new()}
-	subject(:grade){Grade.new()}
+	subject(:employee){Employee.new}
 	subject(:attribute){Attribute.new("property", "value",TextType.new, Information::PUBLIC)}
 
 	it "has an empty attributes?" do
@@ -15,10 +14,6 @@ require 'Information'
 	it "insert attributes" do
 		employee.insert_attribute(attribute)
 		employee.return_attributes.count.should > 0
-	end
-	it "insert profession " do
-		employee.insert_grade(grade)
-		employee.return_grades.count.should > 0
 	end
 	
 end
