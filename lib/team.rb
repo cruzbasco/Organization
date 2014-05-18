@@ -33,6 +33,4 @@ class Team
     projects.first
   end
   
-  
-  
 end

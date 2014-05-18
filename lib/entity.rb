@@ -7,28 +7,12 @@ class Entity
     @visible = Information::PUBLIC
   end
   
-  def main_property
-    @main_attribute.property
-  end
-  
-  def main_value
-    @main_attribute.value
-  end
-  
-  def main_type
-    @main_attribute.type
-  end
-  
   def set_visible (visible)
     @visible = visible
   end
   
   def is_visible?
     @visible
-  end
-  
-  def change_primary_attribute (property, value, type, visible)
-    @main_attribute = Attribute.new(property,value,type,visible)
   end
   
   def add_attribute (attribute)
