@@ -4,13 +4,18 @@ require 'project'
 describe "A team" do
   
   subject(:team) {Team.new}
+  context "starts with" do
+    it "an empty teams" do
+      team.teams.should == []
+    end
   
-  it "starts with empty teams" do
-    team.teams.should == []
-  end
+    it "an empty projects" do
+      team.projects.should == []
+    end
+    
+    it "at least an employee" do 
+    end
   
-  it "starts with empty projects" do
-    team.projects.should == []
   end
   
   it "could manage many teams as it wish" do

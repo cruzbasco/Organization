@@ -16,10 +16,4 @@ require 'Information'
 		grade.return_profession.count.should > 0
 	end
 
-	it "could remove any profession as it needed" do
-		grade.remove_profesion(attribute)
-		grade.return_profession.count.should == 0
-	end
-
-
 end
