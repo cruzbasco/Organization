@@ -2,8 +2,7 @@ class Entity
   
   attr_accessor :attributes, :entities
     
-  def initialize (attribute)
-    @main_attribute = attribute
+  def initialize
     @attributes = []
     @visible = Information::PUBLIC
   end

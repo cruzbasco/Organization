@@ -3,17 +3,10 @@ require 'entity'
 describe "An entity" do
   
   subject(:text_type) {TextType.new}
-  subject(:entity) {Entity.new(Attribute.new("Position","",text_type,Information::PUBLIC))}
+  subject(:entity) {Entity.new}
   subject(:attribute) {Attribute.new("","",text_type,Information::PUBLIC)}
   
   context "starts with" do
-    it "an empty primary attribute" do
-      entity.main_property.should == "Position"
-      entity.main_value.should == ""
-      entity.main_type.should == text_type
-      entity.is_visible?.should == true
-    end
-    
     it "empty attributes" do
       entity.attributes.should == []
     end
