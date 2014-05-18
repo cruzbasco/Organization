@@ -16,5 +16,9 @@ require 'Information'
 		employee.insert_attribute(attribute)
 		employee.return_attributes.count.should > 0
 	end
+	it "insert profession " do
+		employee.insert_grade(grade)
+		employee.return_grades.count.should > 0
+	end
 	
 end
