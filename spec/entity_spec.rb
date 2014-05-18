@@ -11,12 +11,6 @@ describe "An entity" do
       entity.attributes.should == []
     end
     
-    it "could modify its own primary attribute" do
-      entity.change_primary_attribute("cambio","cambio",text_type,Information::PUBLIC)
-      entity.main_property.should == "cambio"
-      entity.main_value.should == "cambio"
-      entity.main_type.should == text_type
-    end
     
     it "is visible if is public" do
       entity.is_visible?.should == true
@@ -60,6 +54,5 @@ describe "An entity" do
       entity.search_attribute("buscar aqui").value.should == "buscar aqui"
     end
   end
-  
   
 end
