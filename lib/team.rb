@@ -1,4 +1,4 @@
-class Teams
+class AlgoDiferente
   
   attr_reader :teams, :projects
   
