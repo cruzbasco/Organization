@@ -1,4 +1,4 @@
-class Team
+class Teams
   
   attr_reader :teams, :projects
   
