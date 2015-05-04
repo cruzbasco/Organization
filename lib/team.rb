@@ -1,4 +1,6 @@
-class AlgoDiferente
+class Team
+  
+#  ninguno de eso cambios funcionanr, correr en el resto
   
   attr_reader :teams, :projects
   
